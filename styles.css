@@ -1,0 +1,311 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Start Global tags
+
+h1 { 
+    font-size:  2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span {
+    font-size: 0.9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+ Finish Global tags */
+
+/* Start Navigation Bar style */
+ nav {
+     position: fixed;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     background-color: rgb(0, 82, 87);
+     align-items: center;
+     box-shadow: 2px 2px 10px rgb(0, 0, 0,15); 
+     z-index: 99;
+ }
+
+ nav img {
+     margin: 10px 0 10px 20px;
+     height: 50px;
+     width: auto;
+     padding: 5px;
+     cursor: pointer;
+}
+
+nav .headbar ul {display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    column-gap: 40px;
+    margin-right: 35px;
+    list-style-type: none;
+    justify-content: flex-end;
+    flex-wrap: wrap;  
+}
+
+nav .headbar ul li a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    transition: 0.3s ease;
+    flex: 1 1 110px;
+    font-size: 20px;
+}
+
+nav .headbar ul li a:hover {
+    color: rgb(143, 122, 6);
+}
+/* Finish Navigation Bar style */
+
+/* Start Home section style */
+
+#home { 
+    background-image: linear-gradient(rgba(2, 101, 107, 0.3),rgba(143, 122, 6,0.2)), url("images/background.jpg");
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+   font-size: 30px;
+}
+
+#home .resumo {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgba(238, 240, 241, 0.5);
+    font-weight: 800;
+    width: fit-content;
+}
+
+#home img{
+    height: 550px;
+    width: auto;
+    position: absolute;
+    z-index: -10;
+}
+/* Finish Home section style */
+
+/* Start Vagas section style */
+
+#vagas {
+    padding-top: 40px;
+}
+
+#vagas h1{
+        text-align: center;
+        font-size: 35px;    
+    }
+
+#vagas .mural-vagas {
+    margin: 0px 30px 30px 30px;
+    
+}
+
+#vagas .mural-vagas .novas-vagas {      
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 1rem;
+    margin-bottom: 50px;
+}
+
+#vagas .todas-vagas {      
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    }
+
+#vagas .todas-vagas a{
+    color: black;
+    font-size: 30px;
+    border: solid 2px black;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    background-color: rgb(143, 122, 6);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0,15);
+    transition: 00.3s ease;
+}
+
+#vagas .todas-vagas a:hover {
+    background-color: rgb(206, 177, 13);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0,15);
+
+}
+
+#vagas .mural-vagas .card-vaga {
+    flex: 1, 1, 450px;
+    background-color: rgba(133, 150, 153, 0.2);
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0,15);
+    margin-top: 30px;
+    padding: 20px 20px 20px 30px;
+    line-height: 22px;
+    }
+
+#vagas .mural-vagas .card-vaga .btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+#vagas .mural-vagas .card-vaga .btn a{
+    text-decoration: none;
+    color: black;
+    border: solid 1px black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#vagas .mural-vagas .card-vaga .btn .contato {
+    color: white;
+    font-weight: 700;
+    background-color: rgb(143, 122, 6);
+    box-shadow: 1px 1px 5px rgb(0, 0, 0,15);
+    font-size: 18px;
+    transition: 00.3s ease;
+}
+
+#vagas .mural-vagas .card-vaga .btn .contato:hover {
+    background-color: rgb(206, 177, 13);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0,15);
+}
+
+#vagas .mural-vagas .card-vaga .informação-vaga {
+    margin: 10px 0 5px 0;
+}
+
+#vagas .mural-vagas .card-vaga .informação-vaga i {
+        color: rgb(56, 56, 56);
+}
+
+/* Finish Vagas section style */
+
+#footer {
+    background-color: rgb(0, 82, 87);
+    color: #fff;
+    padding: 50px;
+    margin-top: 30px;
+}
+
+#footer .links-box {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#footer .links-box ul li {
+    padding-top: 20px;
+    font-size: 12px;
+    list-style-type: none;
+}
+
+#footer .links-box ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 700;
+    transition: 0.35s ease;
+}
+
+#footer .links-box ul li a:hover {
+    color:  rgb(240, 173, 173);
+}
+
+#footer .links-box .newsletter h5{
+    margin-top: 10px;
+    color: rgba(175, 175, 175, 0.5);
+    font-weight: 600;
+}
+
+#footer .links-box .newsletter .subscribe {
+    width: auto;
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+}
+
+#footer .links-box .newsletter .subscribe input {
+    padding: 5px;
+    margin-right: 5px;
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    border: none;
+    color: #fff;
+}
+
+#footer .links-box .newsletter .subscribe .contato {
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    font-size: 22px;
+    background-color: rgb(143, 122, 6);
+    border-radius: 2px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+#footer .links-box .newsletter .subscribe .contato:hover{
+    background-color: #e2c958;
+}
+
+#footer .foot-message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#footer .foot-message .medias {
+    font-size: 15px;
+    }
+    
+#footer .foot-message .medias i {
+    margin-left: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: solid 1px rgb(155, 155, 179);
+    border-radius: 5px;
+    transition: 0.4s ease;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+}   
+#footer .foot-message .medias i:hover{
+    padding: 5px 10px;
+    cursor: pointer;
+    border: solid 1px rgb(155, 155, 179);
+    border-radius: 5px;
+    background-color: rgb(17, 50, 78);
+    color: #fff;
+    
+}
+
+/* Finish Footer Section style */
