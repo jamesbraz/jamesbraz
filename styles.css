@@ -4,26 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Start Global tags
-
-h1 { 
-    font-size:  2.5rem;
-    font-weight: 700;
-    color: rgb(35, 35, 85);
-}
-
-span {
-    font-size: 0.9rem;
-    color: #757373;
-}
-
-h6 {
-    font-size: 1.1rem;
-    color: rgb(24, 24, 49);
-}
-
- Finish Global tags */
-
 /* Start Navigation Bar style */
  nav {
      position: fixed;
@@ -39,7 +19,7 @@ h6 {
 
  nav img {
      margin: 10px 0 10px 20px;
-     height: 50px;
+     height: 40px;
      width: auto;
      padding: 5px;
      cursor: pointer;
@@ -189,6 +169,7 @@ nav .headbar ul li a:hover {
     box-shadow: 1px 1px 5px rgb(0, 0, 0,15);
     font-size: 18px;
     transition: 00.3s ease;
+    margin-left: 10px;
 }
 
 #vagas .mural-vagas .card-vaga .btn .contato:hover {
@@ -219,6 +200,10 @@ nav .headbar ul li a:hover {
     width: auto;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+#footer .links-box .collum-link{
+    margin-bottom: 25px;
 }
 
 #footer .links-box ul li {
@@ -311,3 +296,124 @@ nav .headbar ul li a:hover {
 }
 
 /* Finish Footer Section style */
+
+@media (max-width: 450px) {
+    nav img {
+        margin: 5px 0 5px 10px;
+        height: 25px;
+        padding: 3px;
+   }
+   
+   nav .headbar ul {
+       row-gap: 5px;
+       column-gap: 20px;
+       margin-right: 15px;
+       }
+   
+   nav .headbar ul li a {
+       margin-left: 20px;
+       font-weight: 600;
+       font-size: 13px;
+   }
+   
+   nav .headbar ul li a:hover {
+       color: rgb(143, 122, 6);
+   }
+   /* Finish Navigation Bar style */
+
+    /* Start Home Style*/
+    #home { 
+    height: auto;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+#home .resumo {
+    padding: 45px 15px 15px 15px;
+    font-weight: 600;
+    width: 350px;
+    margin: 50px 0 20px 0;
+}
+
+#home img{
+    height: auto;
+    width: 100%;
+}
+/* Finish Home section style */
+    
+    /* Start Vagas section style */
+  
+    #vagas {
+         justify-self: center;
+     }
+ 
+    #vagas h1{
+            font-size: 25px;
+        }
+   
+    #vagas .mural-vagas {
+        margin: 0px 10px 10px 10px;
+    }
+    
+    #vagas .mural-vagas .novas-vagas {    
+     display: grid;
+     justify-items: center;
+     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));  
+     grid-gap: 0.3rem;
+     margin-bottom: 30px;
+    }
+    
+    #vagas .mural-vagas .card-vaga {
+        flex: 1, 1, 350px;
+        width: 350px;
+        border-radius: 5px;
+        padding: 10px 10px 10px 30px;
+        line-height: 20px;
+        }
+    
+    #vagas .mural-vagas .card-vaga .btn .contato {
+        font-weight: 600;
+        font-size: 16px;
+        transition: 00.3s ease;
+        margin-left: 8px;
+    }
+       
+    /* Finish Vagas section style */
+    
+ 
+    #footer {
+        padding: 30px;
+        font-size: 15px;
+    }
+     
+    #footer .links-box ul li {
+        padding-top: 15px;
+    }
+    
+    #footer .links-box .newsletter .subscribe {
+        margin-top: 30px;
+    }
+    
+    
+    #footer .links-box .newsletter .subscribe .contato {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    #footer .foot-message {
+        margin-top: 20px;
+    }
+    
+    #footer .foot-message .medias {
+        font-size: 15px;
+        margin-top: 10px;
+        }
+        
+    #footer .foot-message .medias a {
+        margin-left: 10px;
+        padding: 3px 8px;
+    }   
+    #footer .foot-message .medias a:hover{
+        padding: 3px 8px;       
+    }
+}
